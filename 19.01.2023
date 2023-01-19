@@ -1,0 +1,72 @@
+#include<iostream>
+using namespace std;
+//int main()
+/*{
+	int i = 0;
+	do {
+		i++;
+		cout << i;
+		cout << "Hello" << endl;
+
+
+	} while (i < 25)
+
+}*/
+
+////{
+	/*int i = 0;
+	do {
+		cout << i << " ";
+		i++;
+		cout << i * i * i << endl;
+
+	} while (i < 200000000000);*/
+
+	/*string password;
+	int i = 0;
+	do {
+		i++;
+		cin >> password;
+
+	} while (password != "12345" && i != 5);*/
+
+	////Locak variable declaration:
+	//string myname;
+	//
+	//// do loop execution
+	//do {
+	//	cout << "Enter my name" << endl;
+	//	cin >> myname;
+	//	if (myname == "no") { cout << "yes!"; };
+	//} while (myname != "Maria");
+
+	//return 0;
+
+//}
+
+bool isNumber(string s)
+{
+	for (int i = 0; i < s.length(); i++)
+		if (isdigit(s[i]) == false)
+			return false;
+	
+	return true;
+
+}
+int main() {
+
+	string myname;
+
+
+	do {
+
+		cout << "Enter my name" << endl;
+		cin >> myname;
+
+		if (isNumber(myname)) { cout << "That is a number!"; };
+	} while (myname != "Maria");
+
+	return 0;
+
+
+}
